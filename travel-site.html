@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Travel Site</title>
+  </head>
+  <body>
+    <!-- 
+        Header tags: tags that 
+        have large text and bold letters
+        <h1></h1> -> <h6></h6>
+     -->
+    <h1>Welcome to My Travel Site</h1>
+
+    <!-- To write regular text, we use the
+    <p></p> tag in HTML (stands for paragraph)
+-->
+    <p>This site is a place for sharing where I want to travel</p>
+    <h2>Here are some places I'd like to visit</h2>
+
+    <!-- 
+    To create an unordered list in HTML, we use the
+    <ul></ul> tag and for each list item that we want to put inside,
+    we will add a <li></li> tag
+    
+    <ol></ol> - stands for ordered list (puts numbers next
+    to our list items instead of bullet points)
+-->
+    <ul>
+      <li>
+        <a href="https://www.japan.travel/en/us/" target="_blank"> Japan </a>
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          width="300px"
+        />
+      </li>
+      <li>
+        <a
+          href="https://iceland.nordicvisitor.com/?rf=g0015-02&gad=1&gclid=CjwKCAjw3oqoBhAjEiwA_UaLtrNokHab1JibBXveVluZ0KTAMmOjCeC25UxeTCIaZrAnC0EUtZU7-xoCO4AQAvD_BwE"
+          target="_blank"
+        >
+          Iceland
+        </a>
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1476610182048-b716b8518aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1259&q=80"
+          width="300px"
+        />
+      </li>
+      <li>
+        <a href="https://www.spain.info/en/" target="_blank"> Spain </a>
+        <br />
+        <img
+          src="https://images.unsplash.com/photo-1597032868256-1f659aeb0d49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+          width="300px"
+        />
+      </li>
+    </ul>
+
+    
+    
+    <!-- 
+    Table element is for creating tables of data
+    using HTML 
+    All table-related data must go inside of a 
+    <table></table> tag
+    
+    <tr></tr> -> specifies a brand new row of data
+    (stands for table row)
+    <th></th> -> specifies a bold column name inside of
+    table
+    (stands for table header)
+    
+    -->
+    <table>
+       <!-- Table Row -->
+       <tr>
+           <!-- Table Header -->
+           <th>Destination</th>
+           <th>Capital</th>
+           <th>Official Language</th>
+       </tr>
+       <!-- Second table row -->
+       <tr>
+           <!-- Table data -> NOT Headers -->
+           <td>Japan</td>
+           <td>Tokyo</td>
+           <td>Japanese</td>
+       </tr>
+       <!-- Third table row for Iceland -->
+       <tr>
+           <td>Iceland</td>
+           <td>Reykjavik</td>
+           <td>Icelandic</td>
+       </tr>
+       <!-- Fourth and last row of data for Spain -->
+       <tr>
+           <td>Spain</td>
+           <td>Madrid</td>
+           <td>Castellano / Spanish</td>
+       </tr>
+    </table>
+
+    <!-- 
+        Forms 
+        <form></form>
+    -->
+    <h2>Contact me about my travels</h2>
+    <form>
+        <label >Email</label>
+        <br/>
+        <input type="text"/>
+        <br/>
+        <label>What do you want to talk about?</label>
+        <br/>
+        <textarea rows="10" cols="50"></textarea>
+        
+        <br/>
+        <!-- What if we want people to be able to
+        select from pre-existing options? We can
+    use the <select> and <option> tags -->
+        <label>What's your favorite type of destination?</label>
+        <br/>
+        <select>
+            <option>Countryside</option>
+            <option>City</option>
+            <option>Beach</option>
+        </select>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <!-- One way to submit a form is with the
+        input type="submit" -->
+        <input type="submit" />
+
+        <!-- Another way to submit a form is to use
+        a 'button' tag which, when inside of a form tag,
+    will be treated as a submit button by default -->
+        <button>Submit the form</button>
+    </form>
+
+
+
+
+<!-- 
+    To create a hyperlink (a link to another website/page) 
+    The tag we use to create links in HTML is called
+    the anchor tag
+    <a></a>
+    https://www.japan.travel/en/us/
+-->
+    <a href="https://www.japan.travel/en/us/" target="_blank"
+      >Link to the Japan Tourism site</a
+    >
+
+    <!--
+        Images are very useful for making pretty websites.
+        Fortunately, HTML comes with an element specifically
+        designed for rendering pictures to your browser
+        it is a self-closing tag called <img/> and
+        it requires the src attribute that will point towards
+        the location of the image you want to render
+     -->
+    <img src="./assets/images/Comb_Shackleton.PNG" width="300px" />
+    <img alt="A picture of my cat shackleton with a comb" />
+
+
+    </body>
+</html>
